@@ -18,6 +18,6 @@ class DeleteUser(FlaskForm):
     submit = SubmitField('Submit')
 
 class UpdateUser(FlaskForm):
-    email = StringField('Current email', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired()])
     new_email = StringField('New email', validators=[DataRequired()])
     submit = SubmitField('Submit')
